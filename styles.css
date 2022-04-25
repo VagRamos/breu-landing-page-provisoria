@@ -1,0 +1,74 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(img/breu-Bg-site.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 1;
+}
+.rain 
+{
+    height: 100vh;
+    background: url(img/rain.png);
+    animation: rain 2s linear infinite;
+}
+.rain:before
+{
+    content: "";
+    position: absolute;
+    background: url(img/lightining.png);
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    background-color: #ffffff55;
+    animation: lighting 3s linear infinite;
+    opacity: 0;  
+}
+@keyframes rain 
+{
+    0%
+    {
+        background-position: 0% 0%;
+    }
+    100%
+    {
+        background-position: 20% 100%;
+    }
+}
+@keyframes lighting 
+{
+    0%
+    {
+        opacity: 0;
+    }
+    20%
+    {
+        opacity: 0;
+    }
+    21%
+    {
+        opacity: 1;
+    }
+    25%
+    {
+        opacity: 0;
+    }
+    30%
+    {
+        opacity: 0;
+    }
+    31%
+    {
+        opacity: 1;
+    }
+    35%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
