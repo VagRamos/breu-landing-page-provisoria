@@ -12,7 +12,7 @@ body
 section
 {
     background: url(img/breu-Bg-site.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     opacity: 1;
 }
@@ -121,7 +121,13 @@ nav a p
 {
     body
     {
-        margin: 0px 20px;
+        margin: 0px 10px;
+    }
+    section
+    {
+        background: url(img/breu-bg-mobile.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
     .rain 
     {
